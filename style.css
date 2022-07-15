@@ -1,0 +1,226 @@
+html{
+  height: 1000px;
+}
+
+::-webkit-scrollbar {
+  width: 1.1rem;
+ }
+ 
+::-webkit-scrollbar-track {
+  border: 7px solid #232943;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  }
+ 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #b8acaa, #3d4a59);
+  border-radius: 1rem;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(270deg, #b8acaa, #3d4a59, #b8acaa);
+}
+ 
+/* for Firefox */
+ html {scrollbar-color: #b8acaa #3d4a59;} 
+
+h1{
+   color: #b8acaa;
+}
+
+*{
+    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li{
+    list-style-type: none;
+}
+
+.container { 
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 0.9fr 1.4fr 0.4fr 2.6fr; 
+  grid-template-rows: 2.1fr 0.1fr 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Logo Header Header Header"
+    ". Header Header Header"
+    "Main Main Main Main"
+    "About About About About"
+    "Contact Contact Contact Contact"
+    ". . . ."
+    "Footer Footer Footer Footer"; 
+
+  }
+  
+  .Header { grid-area: Header;
+    background-color:#EDE7E7;
+
+    position: fixed;
+    top: 0;
+    left: 20%;
+    right: 0;
+    height:50px;
+
+    
+
+}
+  
+  .Logo { grid-area: Logo; 
+    position:fixed;
+
+}
+
+.myimg{
+  border-radius: 50%;
+
+
+  height: 100px;
+  width: auto;
+  position: absolute;
+  top:0px;
+  left:20px;
+
+}
+  
+  .Main { grid-area: Main; 
+  display:flex;
+justify-content: center;
+align-content: center;
+position: absolute;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+    top:20%;
+    text-align: center;
+    font-size: large;
+    color: #b8acaa ;
+    
+}
+.About { grid-area: About; 
+text-align: center;
+color: #b8acaa;
+position: absolute;
+
+right: 20%;
+bottom: 50%;
+top:150%;
+left:35%;
+border: 5px solid #EDE7E7;
+
+    
+}
+
+
+.Contact { grid-area: Contact;
+  display: flex;
+  flex-direction: row wrap ;
+  justify-content: center;
+  gap:200px;
+
+
+}
+
+
+.myform { grid-area: Contact;
+
+  border: 5px solid #EDE7E7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+text-align: center;
+width: auto;
+right: 10px;
+bottom: 200%;
+top:50%;
+left:10%;
+    
+
+
+}
+.imgcontct{
+  border: 5px solid #EDE7E7;
+left: 10px;
+bottom: 200%;
+top:50%;
+right:10%;
+text-align: center;
+background-color: #EDE7E7;
+
+
+}
+
+.emailtext{
+  text-align-last:center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:100px;
+}
+
+
+
+  .listnav{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #b8acaa;
+    gap:100px;
+
+  }
+
+  .Footer {     grid-area: Footer;
+    background-color:#EDE7E7;
+    color: #b8acaa ;
+    text-align: center;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100px;
+
+  
+}
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+  }
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+.fa-github{
+ background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin{
+    background: #007bb5;
+    color: white;
+
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+  
+
+  
